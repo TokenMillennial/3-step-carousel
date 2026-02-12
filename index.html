@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>3-Step Survey Carousel</title>
+      <link rel="stylesheet" href="styles.css">
+      <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+<body class="bg-black text-white">
+    <div class="min-h-screen flex items-center justify-center p-4">
+            <div class="w-full max-w-4xl">
+                        <!-- Step Progress Indicators -->
+                        <div class="flex gap-2 mb-12 justify-center">
+                                        <div data-indicator="0" class="rounded bg-white/20 h-1 w-8 transition-all duration-300"></div>div>
+                                        <div data-indicator="1" class="rounded bg-white/20 h-1 w-8 transition-all duration-300"></div>div>
+                                        <div data-indicator="2" class="rounded bg-white/20 h-1 w-8 transition-all duration-300"></div>div>
+                        </div>div>
+            
+                        <!-- Carousel Container -->
+                        <div class="relative h-[600px] overflow-hidden">
+                                        
+                                        <!-- STEP 1: The Problem -->
+                                        <div data-carousel-item="0" class="absolute w-full transition-all duration-700 transform">
+                                                            <div class="overflow-hidden rounded-3xl border border-white/10 bg-[#0A0A0A] shadow-2xl backdrop-blur-xl">
+                                                                                    <div class="grid items-center gap-12 p-8 md:grid-cols-2 md:p-12">
+                                                                                                                <div>
+                                                                                                                                                  <span class="text-xs font-bold tracking-widest text-cyan-400 uppercase">How AI sees your site today</span>span>
+                                                                                                                                                  <h2 class="mt-4 text-4xl font-bold text-white">The Problem</h2>h2>
+                                                                                                                                                  <p class="mt-4 text-lg text-gray-400">To an AI model, your beautiful website is just noise. It sees raw HTML bloated with tracking scripts, and layout code. AI bots ultimately struggle to find the actual product data.</p>p>
+                                                                                                                                                  <button data-next-button class="mt-8 rounded-full bg-white px-6 py-3 font-semibold text-black hover:bg-gray-200 transition">See the Transformation →</button>button>
+                                                                                                                  </div>
+                                                                                                                  <div class="relative overflow-hidden rounded-xl bg-black border border-white/5 p-4 h-[300px] flex flex-col justify-center">
+                                                                                                                                                    <pre class="text-xs text-green-400 overflow-hidden"><code>&lt;div class="w-full relative overflow-hidden"&gt;
+                                                                                                                                                      &lt;script src="tracker.js"&gt;&lt;/script&gt;
+                                                                                                                                                      &lt;div class="z-10 absolute junk-class"&gt;
+                                                                                                                                                        &lt;span class="text-transparent"&gt;
+                                                                                                                                                          Price: $189
+                                                                                                                                                        &lt;/span&gt;
+                                                                                                                                                      &lt;/div&gt;
+                                                                                                                                                    &lt;/div&gt;</code></pre>pre>
+                                                                                                                                                  <div class="mt-4 bg-orange-900/30 border border-orange-600 rounded px-3 py-2 text-orange-400 text-xs">⚠️ Unstructured HTML</div>
+                                                                                                                    </div>
+                                                                                      </div>
+                                                            </div>
+                                        </div>
+                        
+                                        <!-- STEP 2: The Processing -->
+                                        <div data-carousel-item="1" class="absolute w-full transition-all duration-700 transform">
+                                                            <div class="overflow-hidden rounded-3xl border border-white/10 bg-[#0A0A0A] shadow-2xl backdrop-blur-xl">
+                                                                                    <div class="grid items-center gap-12 p-8 md:grid-cols-2 md:p-12">
+                                                                                                                <div>
+                                                                                                                                                <span class="text-xs font-bold tracking-widest text-cyan-400 uppercase">Our solution</span>span>
+                                                                                                                                                <h2 class="mt-4 text-4xl font-bold text-white">The Processing</h2>h2>
+                                                                                                                                                <p class="mt-4 text-lg text-gray-400">Dual Web sits silently in the background. When an AI agent visits, we intercept the request and strip away the noise in real-time.</p>p>
+                                                                                                                                                <button data-next-button class="mt-8 rounded-full bg-white px-6 py-3 font-semibold text-black hover:bg-gray-200 transition">Reveal the Result →</button>button>
+                                                                                                                  </div>
+                                                                                                                <div class="relative overflow-hidden rounded-xl bg-black border border-white/5 p-4 h-[300px] flex flex-col justify-center items-center">
+                                                                                                                                                <div class="text-center">
+                                                                                                                                                                                    <div class="text-xl font-bold text-cyan-400">ANALYZING INTENT...</div>
+                                                                                                                                                                                    <div class="mt-4 flex justify-center gap-2">
+                                                                                                                                                                                                                            <div class="h-2 w-2 rounded-full bg-cyan-400 animate-pulse"></div>
+                                                                                                                                                                                                                            <div class="h-2 w-2 rounded-full bg-cyan-400 animate-pulse" style="animation-delay: 0.2s"></div>
+                                                                                                                                                                                                                            <div class="h-2 w-2 rounded-full bg-cyan-400 animate-pulse" style="animation-delay: 0.4s"></div>
+                                                                                                                                                                                                                        </div>
+                                                                                                                                                  </div>
+                                                                                                                  </div>
+                                                                                      </div>
+                                                            </div>
+                                        </div>
+                        
+                                        <!-- STEP 3: The Solution -->
+                                        <div data-carousel-item="2" class="absolute w-full transition-all duration-700 transform">
+                                                            <div class="overflow-hidden rounded-3xl border border-white/10 bg-[#0A0A0A] shadow-2xl backdrop-blur-xl">
+                                                                                    <div class="grid items-center gap-12 p-8 md:grid-cols-2 md:p-12">
+                                                                                                                <div>
+                                                                                                                                                <span class="text-xs font-bold tracking-widest text-cyan-400 uppercase">Perfect clarity for AI</span>span>
+                                                                                                                                                <h2 class="mt-4 text-4xl font-bold text-white">The Solution</h2>h2>
+                                                                                                                                                <p class="mt-4 text-lg text-gray-400">We serve a clean, structured semantic view. No design, no scripts—just pure intent, context, and data. This is what makes AI understand your product instantly.</p>p>
+                                                                                                                                                <button class="mt-8 rounded-full bg-white px-6 py-3 font-semibold text-black hover:bg-gray-200 transition">Book a Demo →</button>button>
+                                                                                                                  </div>
+                                                                                                                <div class="relative overflow-hidden rounded-xl bg-black border border-white/5 p-4 h-[300px] overflow-y-auto">
+                                                                                                                                                <pre class="text-xs text-green-400"><code># Acme Velocity Pro
+                                                                                                                                                PRICE: $189.00 • IN STOCK • ID: VEL-PRO-2
+                                                                                                                                                
+                                                                                                                                                ## AI Intent Analysis
+                                                                                                                                                High-performance carbon-plated running shoe
+                                                                                                                                                designed for marathon training and race day speed.
+                                                                                                                                                
+                                                                                                                                                ## Key Features
+                                                                                                                                                - Full-length carbon fiber flyplate
+                                                                                                                                                - Responsive ZoomX foam midsole
+                                                                                                                                                - Breathable engineered mesh upper</code></pre>pre>
+                                                                                                                  </div>
+                                                                                      </div>
+                                                            </div>
+                                        </div>
+                        </div>
+            
+                        <!-- Step Counter -->
+                        <div class="text-center text-gray-500 text-sm mt-12">
+                                        <span id="step-counter">Step 1 of 3 — The current reality</span>span>
+                        </div>
+            </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>body>
+</html>html></code></code>
+                                                                                                                </div></title>
+  </head>
